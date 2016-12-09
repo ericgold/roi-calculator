@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Answering Service ROI Calculator</title>
+	</head>
+	<body>
+		<header>
+			<h1>Answering Service ROI Calculator</h1>
+		</header>
+		<main>
+			<div id="roi-calc">
+				<div class="calc-row">
+					<label for="plan" class="calc-label">Plan</label> 
+					<select name="plan" class="calc-input" id="plan">
+						<option value="149.99">135 minutes | $149.99</option>
+						<option value="199.99" selected>225 minutes | $199.99</option>
+						<option value="399.99">450 minutes | $399.99</option>
+						<option value="629.99">725 minutes | $629.99</option>
+						<option value="849.99">1000 minutes | $849.99</option>
+						<option value="1199.99">1425 minutes | $1199.99</option>
+						<option value="1999.99">2400 minutes | $1999.99</option>
+						<option value="3899.99">4750 minutes | $3899.99</option>
+						<option value="6599.99">8000 minutes | $6599.99</option>
+						<option value="9499.99">12000 minutes | $9499.99</option>
+					</select>
+				</div>
+
+				<div class="calc-row">
+					<label for="leads" class="calc-label">Leads</label> 
+					<input type="number" class="calc-input" id="leads" placeholder="0">
+				</div>
+
+				<div class="calc-row">
+					<label for="rate" class="calc-label">Conversion Rate</label> 
+					<input type="range" class="calc-input" id="rate">
+					<span id="rate-box">50%</span>
+				</div>
+
+				<div class="calc-row">
+					<label for="trans-amt" class="calc-label">Avg. Trans. Amt.</label> 
+					<input type="number" class="calc-input" id="trans-amt" placeholder="0">
+				</div>
+				<div class="calc-row">
+					<button id="calculate">Calculate ROI</button>
+				</div>
+			</div>
+			<div id="output-wrapper">
+				<p id="roi-label">Monthly ROI</p>
+				<p id="output">0</p>
+			</div>
+		</main>
+		<footer>
+			<p>Work is what you do, not where you do it. Anywhere Works.</p>
+		</footer>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>

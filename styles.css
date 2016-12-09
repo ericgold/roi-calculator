@@ -1,0 +1,119 @@
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: calc(100vh -9rem);
+	background-color: #C5EEF9; /*french pass*/
+}
+
+header {
+	height: 5rem;
+}
+
+header h1 {
+	text-align: center;
+	color: #455C64; /*san juan*/
+}
+
+#roi-calc {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	max-width: 768px;
+	margin: 1rem auto;
+	padding: 2rem;
+	background-color: white;
+	color: #455C64; /*san juan*/
+}
+
+.calc-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.calc-input {
+	display: inline-block;
+	width: 30%;
+	height: 2rem;
+	line-height: 1.5rem;
+	margin: 1rem;
+	border: 2px solid #455C64; /*san juan*/
+	border-radius: 4px;
+}
+
+.calc-label {
+	display: inline-block;
+	width: 60%;
+	margin: 1rem auto 1rem 1rem;
+	font-size: 1.5rem;
+}
+
+.calc-input:focus {
+	outline: none;
+	border: 2px solid #F56956; /*persimmon*/
+}
+
+#rate {
+	width: 20%;
+	margin-right: 0.5rem;
+	text-align: center;
+}
+
+#rate-box {
+	width: 5%;
+	background-color: #C5EEF9;
+	height: 2rem;
+	line-height: 1.5rem;
+	margin: auto 1rem auto auto;
+}
+
+#calculate {
+	width: 30%;
+	height: 2rem;
+	margin: 1rem auto;
+	outline: none;
+	background-color: #C5EEF9; /*french pass*/
+	border: 2px solid #455C64; /*san juan*/
+	border-radius: 4px;
+}
+
+#calculate:focus {
+	outline: none;
+}
+
+#calculate:active {
+	background-color: #F56956; /*persimmon*/
+}
+
+#output-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+#roi-label {
+	height: 2rem;
+	line-height: 1.5rem;
+	margin: 1rem auto 0 auto;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+#output {
+	height: 2rem;
+	line-height: 1.5rem;
+	padding: .25rem;
+	width: 20%;
+	margin: 1rem auto;
+	background-color: white;
+	color: #455C64; /*san juan*/
+}
+
+footer {
+	height: 2rem;
+}
+
+footer p {
+	text-align: center;
+	color: #455C64; /*san juan*/
+}
+
